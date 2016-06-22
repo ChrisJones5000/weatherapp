@@ -1,0 +1,275 @@
+/**********************************
+	Stylesheet for Weather App
+	Author: Chris Jones
+	Date: 4/27/2016
+	version: 1.0
+	Revision History:
+	Version: 1.0 - Initial Application
+
+*********************************/
+
+/*******************************************
+	TESTING COMPONENTS
+*******************************************/
+
+/** {
+	border: 1px solid #F00;
+}*/
+
+.testing-border {
+	border: 1px solid #00F;
+}
+
+/*******************************************
+	BASE ELEMENT STYLES
+*******************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0 0 150px;
+	background: #DDD;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+	font-family: 'Playfair Display', Georgia, serif;
+}
+
+header {
+	background: rgba(0,0,0,.5);
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	height: 150px;
+	max-width: 500px;
+}
+
+/*******************************************
+	CONTAINER STYLES
+*******************************************/
+
+#wrapper {
+	min-height: 100%;
+	padding-bottom: 50px;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#title-container,
+#secondary-weather-container {
+	color: #FFF;
+}
+
+#title-container,
+#primary-weather-container {
+	padding: 10px 0;
+}
+
+#title-container h1 {
+	margin-top: 0;
+	letter-spacing: 2px;
+}
+
+#date-time-container {
+	font-size: .75em;
+}
+
+#primary-weather-container {
+	background: #eee;
+	background: rgba(255,255,255,.6);
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 0;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	display: table;
+	box-shadow: 0 0 5px #FFF;
+}
+
+#primary-weather-output {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+#secondary-weather-container {
+	display: table;
+}
+
+.row {
+	width: 100%;
+}
+
+.left-column,
+.right-column {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 150px;
+	height: 150px;
+	background: rgba(0,0,0,.5);
+}
+
+.right-column {
+	border-left: 2px solid #999;
+}
+
+.left-column {
+	border-right: 2px solid #999;
+}
+
+/*******************************************
+	USER INTERFACE STYLES
+*******************************************/
+
+#title-container h2,
+#date-time-container p {
+	margin: 0;
+}
+
+#primary-weather-output > span img {
+	height: 100px;
+	width: 100px;
+}
+
+#primary-weather-output p:last-child {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-top: 0;
+	font-size: .9em;
+	font-weight: 900;
+}
+
+#weather-description {
+	color: #45d9cc;
+	font-weight: 700;
+	font-size: 1.25em;
+	letter-spacing: 2px;
+}
+
+#weather-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+#weather-icon img {
+	width: 50px;
+}
+
+#temperature {
+	font-size: 5em;
+	margin: 0;
+}
+
+.unit-button {
+	font-size: 1.1em;
+	cursor: pointer;
+	padding: 5px;
+	-webkit-transition: all .2;
+	transition: all .2;
+}
+
+.left-column h2,
+.right-column h2 {
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+}
+
+#wind-direction-icon {
+	font-size: 2em;
+}
+
+#humidity {
+	font-size: 2em;
+}
+
+/*******************************************
+	UTILITY STYLES
+*******************************************/
+
+.center-text {
+	text-align: center;
+}
+
+.active-text {
+	color: #45a5d9;
+	text-shadow: 1px 1px 1px #222;
+}
+
+
+/*******************************************
+	RESPONSIVE STYLES
+*******************************************/
+
+@media (max-width: 600px) {
+
+	#primary-weather-container {
+		width: 275px;
+		height: 275px;
+		margin: 20px auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

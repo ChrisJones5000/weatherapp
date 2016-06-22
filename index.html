@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather App</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="stylesheets/style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<!--Title container including location, date, time, and weather-->
+			<header class="row">
+				<div id="title-container" class="container">
+					<h1 id="location"></h1>
+					<div id="date-time-container">
+						<p></p>
+						<p></p>
+					</div>
+					<p id="weather-description"></p>
+				</div>
+			</header>
+			<!--Primary weather container including weather icon, temperature (hi and low), and 
+			button to switch between metric and US units-->
+			<div id="primary-weather-container" class="container">
+				<div id="primary-weather-output">
+					<p id="weather-icon"></p>
+					<p id="temperature"></p>
+					<p><span class="unit-button active-text">F</span> | <span class="unit-button">C</span></p>
+				</div>
+			</div>
+		</div>
+		<!--Secondary weather container including two columns (wind details and humidity details)
+		Used as footer-->
+		<footer class="row">
+			<div id="secondary-weather-container" class="container center-text">
+				<div class="left-column">
+					<span id="wind-direction-icon" class='fa fa-arrow-up' aria-hidden='true'></span>
+					<p id="wind-speed"></p>
+					<h2>Wind</h2>
+				</div>
+				<div class="right-column">
+					<p id="humidity"></p>
+					<h2>Humidity</h2>
+				</div>
+			</div>
+		</footer>
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
